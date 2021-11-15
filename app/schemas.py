@@ -66,7 +66,22 @@ class PostOut(BaseModel):
     
     class Config:
         orm_mode = True
-    
+    # {
+    #     "Post": {
+    #         "title": "new_title3",
+    #         "content": "new_title3",
+    #         "published": true,
+    #         "id": 6,
+    #         "created_at": "2021-11-10T23:04:47.313834+03:00",
+    #         "owner_id": 16,
+    #         "owner": {
+    #             "id": 16,
+    #             "email": "abcdefg@gmail.com",
+    #             "created_at": "2021-11-08T11:53:54.448650+03:00"
+    #         }
+    #     },
+    #     "votes": 0
+    # },
     
 class Vote(BaseModel):
     post_id: int

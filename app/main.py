@@ -12,7 +12,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = ["https://www.google.com", "https://google.com"]
+origins = ["*"] # list of domains allowed to make request to API
+# for example https://www.google.com , https://www.youtube.com
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
